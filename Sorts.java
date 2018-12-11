@@ -33,4 +33,16 @@ public class Sorts{
         }
       }
     }
+  public static void insertionSort(int[] ary){
+    
+  
+    for(int i = 1; i < ary.length; i++){
+      if(ary[i] < ary[i-1]){
+        int current = ary[i];
+        for(int j = 0; j < ary.length; j++){
+          if(current < ary[j])
+        }
+      }
+    }
   }
+}

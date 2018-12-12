@@ -35,17 +35,27 @@ public class Sorts{
     }
   public static void insertionSort(int[] ary){
     
+
   
     for(int i = 1; i < ary.length; i++){
-      if(ary[i] < ary[i-1]){
         int current = ary[i];
+        /*
+      if(ary[i] < ary[i-1]){
+        
         for(int j = ary.length - 1; j > -1; j--){
           if(current < ary[j]){
             ary[j+1] = ary[j];
-          }
-          ary[j] = current;
+            }
         }
-      }
+            */
+        int j = i - 1;
+        while(j>= 0 && ary[j] > current){
+            ary[j + 1] =ary[j];
+            j--;
+            }
+        
+        ary[j + 1] = current;
+        }
     }
-  }
 }
+
